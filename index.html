@@ -101,8 +101,8 @@
 
 </div>
 
-<form>
-  <fieldset>
+<form id="data" action="index.html">
+  <!-- <fieldset> -->
     <legend>Your basic info</legend>
     <label for="username">Please enter your username</label>
     <input type="text" id="name" name="user_name">
@@ -113,16 +113,33 @@
     <label for="e-mail">Please enter your e-mail</label>
     <input type="e-mail" id="e-mail" name="user_e-mail">
     <br />
-  </fieldset>
-  <fieldset>
+  <!-- </fieldset>
+  <fieldset> -->
     <legend>Your profile</legend>
     <label for="bio">Enter your bio here</label>
     <textarea id="bio" name="user_bio"></textarea>
-</fieldset>
-  <br />
-  <h3>Click below to submit</h3>
-  <button type="submit">Sign up</button>
+  <!--</fieldset> -->
 </form>
+
+<p>Click "Try it" to display the value of each element in the form.</p>
+
+<button onclick="jsFunction()">Try it</button>
+
+<p id="data-output"></p>
+
+<script>
+function jsFunction() {
+  var x = document.getElementById("data");
+  var text = "";
+  var i;
+  for (i = 0; i < x.length ;i++) {
+    text += x.elements[i].value + "<br>";
+  }
+  document.getElementById("data-output").innerHTML = text;
+}
+</script>
+
+
 
   <footer> <!-- Footer End -->
 
