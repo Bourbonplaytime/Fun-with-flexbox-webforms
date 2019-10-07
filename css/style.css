@@ -2,14 +2,21 @@
 
 }
 
+.wrap {
+  min-height: calc(100vh - 50px);
+}
+
 .flex {
   display: flex;
   flex-direction: column;
   align-items: center;
   flex-grow: 1;
+  background-color: black;
 }
 
-li {
+.name:visited,
+.name {
+  color: black;
   background: linear-gradient(
     to right,
     red,
@@ -17,42 +24,82 @@ li {
     rgb(255, 255, 0),
     green
   );
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+li {
+  background: conic-gradient(red, yellow, lime, aqua, blue, magenta, red);
   text-decoration: none;
-  font-size: 16px;
+  font-size: 20px;
   padding: 5px;
   margin: 5px;
   border-radius: 5px;
   list-style: none;
 }
 
+a,
 a:visited {
-  color: black;
+  text-decoration: none;
+  color: white;
 }
 
 .intro-box {
   background-color: #12e80e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-rows {
+  padding: 25px;
+  background-color: #f0eabd;
+  color: #383205;
+}
+
+.biopic {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  transition: all 1s;
+}
+
+.biopic:hover {
+  transform: scale3d(1.15, 1.15, 3) rotate(360deg);
+  border-radius: 0;
+}
+
+.content-rows div {
+  border: 1px solid;
+  margin: 10px;
+}
+
+.content-rows img {
+  height: 125px;
+  width: 150px;
+  border-radius: 25%;
+  float: left;
+  margin: 10px 25px 10px 25px;
+}
+
+.content-rows h3 {
+  margin: 10px;
+}
+
+.about-row-secondary img {
+  float: right;
 }
 
 .column {
   margin: 0 20px;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .flex {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-
-  .name {
-    align-items: center;
-    background: linear-gradient(
-      to right,
-      red,
-      #f06d06,
-      rgb(255, 255, 0),
-      green
-    );
   }
 
   .main-nav {
@@ -62,7 +109,6 @@ a:visited {
 
   li {
     width: 150px;
-    background: conic-gradient(red, yellow, lime, aqua, blue, magenta, red);
     align-self: auto;
   }
 
@@ -79,25 +125,24 @@ a:visited {
   .secondary {
     order: -1;
   }
+
+  .footer {
+    background-color: grey;
+    height: 50px;
+  }
+
+  .footer-text {
+    padding-top: 10px;
+  }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1200px) {
   .flex {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     height: 100px;
-    margin: 0 50px;
-  }
-
-  .name {
-    background: linear-gradient(
-      to right,
-      red,
-      #f06d06,
-      rgb(255, 255, 0),
-      green
-    );
+    padding: 0 50px;
   }
 
   .main-nav {
@@ -107,7 +152,6 @@ a:visited {
 
   li {
     width: 150px;
-    background: conic-gradient(red, yellow, lime, aqua, blue, magenta, red);
     align-self: auto;
   }
 

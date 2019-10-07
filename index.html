@@ -36,112 +36,82 @@
 
 <body> <!-- Body Begin -->
 
-  <div class="flex">
+  <div class="wrap">
 
-    <h1 class="name"><a href="#">Matt Harvey Online</a></h1>
+    <div class="flex">
 
-    <ul class="main-nav">
+      <h1><a class="name" href="#">Matt Harvey Online</a></h1>
 
-      <li><a href="#">About</a></li>
-      <li><a href="#">Projects</a></li>
-      <li><a href="#">Social Media</a></li>
-      <li><a href="#">Contact</a></li>
+      <ul class="main-nav">
 
-    </ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Social Media</a></li>
+        <li><a href="#">Contact</a></li>
 
-  </div>
+      </ul>
 
-<header class="intro-box"> <!-- Header Begin -->
+    </div>
 
-    <img src="img/bourbonfridgeart.png" alt="bourbon barrel">
+  <header class="intro-box"> <!-- Header Begin -->
 
-    <h1> Welcome to Matt Harvey Online </h1>
+      <h2>Welcome to Matt Harvey Online</h2>
 
-    <p> A collection of my work </p>
+      <img class="biopic" src="img/bio.jpg" alt="bio picture">
 
-</header> <!-- Header End -->
+      <h3> A collection of my work </h3>
 
-<div class="row">
+  </header> <!-- Header End -->
 
-  <div class="column primary">
+  <div class="row">
 
-    <h3>Welcome!</h3>
+    <div class="column primary">
 
-    <p>Thank you for visiting my portfolio. I look forward to sharing the things that I have built with the world.</p>
+      <h3>Welcome!</h3>
 
-    <p>I aim to demonstrate a competency with programming projects across the spectrum using a diverse collections of languages and techniques.</p>
+      <p>Thank you for visiting my portfolio. I look forward to sharing the things that I have built with the world.</p>
 
-    <p>I hope you enjoy perusing through my work as much as I have enjoyed making it. I can't wait to get started in this new industry.</p>
+      <p>I aim to demonstrate a competency with programming projects across the spectrum using a diverse collections of languages and techniques.</p>
 
-  </div>
+      <p>I hope you enjoy perusing through my work as much as I have enjoyed making it. I can't wait to get started in this new industry.</p>
 
-  <div class="column secondary">
+    </div>
 
-    <h3>Ready to go?</h3>
+    <div class="column secondary">
 
-    <p>I hope you're ready to blast off and dig into all the cool stuff I have been building.</p>
+      <h3>Ready to go?</h3>
 
-    <p>Being able to present this to you is the culmination of about 18 months of study on my part.</p>
+      <p>I hope you're ready to blast off and dig into all the cool stuff I have been building.</p>
 
-    <p>I can't be more excited to have you along for the ride or anxious to get going so let's not waste any time.</p>
+      <p>Being able to present this to you is the culmination of about 18 months of study on my part.</p>
 
-  </div>
+      <p>I can't be more excited to have you along for the ride or anxious to get going so let's not waste any time.</p>
 
-  <div class="column tertiary">
+    </div>
 
-    <h3>Want to build stuff together?</h3>
+    <div class="column tertiary">
 
-    <p>I'm always open to working collaboratively on projects so if you have a cool idea and need help just let me know.</p>
+      <h3>Want to build stuff together?</h3>
 
-    <p>I'm open to working in a plethora of languages including html, css, js, c#, python, react.js, etc.</p>
+      <p>I'm always open to working collaboratively on projects so if you have a cool idea and need help just let me know.</p>
 
-    <p>Any interesting project is one I'd be willing to take a look at so don't be shy let's build together.</p>
+      <p>I'm open to working in a plethora of languages including html, css, js, c#, python, react.js, etc.</p>
+
+      <p>Any interesting project is one I'd be willing to take a look at so don't be shy let's build together.</p>
+
+    </div>
 
   </div>
 
 </div>
 
-<form id="data" action="index.html">
-  <!-- <fieldset> -->
-    <legend>Your basic info</legend>
-    <label for="username">Please enter your username</label>
-    <input type="text" id="name" name="user_name">
-    <br />
-    <label for="password">Please enter your password</label>
-    <input type="password" id="password" name="user_password">
-    <br />
-    <label for="e-mail">Please enter your e-mail</label>
-    <input type="e-mail" id="e-mail" name="user_e-mail">
-    <br />
-  <!-- </fieldset>
-  <fieldset> -->
-    <legend>Your profile</legend>
-    <label for="bio">Enter your bio here</label>
-    <textarea id="bio" name="user_bio"></textarea>
-  <!--</fieldset> -->
-</form>
-
-<p>Click "Try it" to display the value of each element in the form.</p>
-
-<button onclick="jsFunction()">Try it</button>
-
-<p id="data-output"></p>
-
-<script>
-function jsFunction() {
-  var x = document.getElementById("data");
-  var text = "";
-  var i;
-  for (i = 0; i < x.length ;i++) {
-    text += x.elements[i].value + "<br>";
-  }
-  document.getElementById("data-output").innerHTML = text;
-}
-</script>
-
-
-
   <footer> <!-- Footer End -->
+
+    <div class="footer">
+
+      <h3 class="footer-text"> Site Design by Matthew Harvey</h3>
+
+    </div>
 
   </footer> <!-- Footer End -->
 
