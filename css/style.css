@@ -6,6 +6,10 @@
   min-height: calc(100vh - 50px);
 }
 
+.nav {
+  margin: -10px -30px;
+}
+
 .flex {
   display: flex;
   flex-direction: column;
@@ -52,12 +56,6 @@ a:visited {
   align-items: center;
 }
 
-.content-rows {
-  padding: 25px;
-  background-color: #f0eabd;
-  color: #383205;
-}
-
 .biopic {
   height: 250px;
   width: 250px;
@@ -68,6 +66,15 @@ a:visited {
 .biopic:hover {
   transform: scale3d(1.15, 1.15, 3) rotate(360deg);
   border-radius: 0;
+}
+
+.row {
+  background-color: #c2c7bb;
+  padding: 20px;
+}
+
+.column {
+  background-color: white;
 }
 
 .content-rows div {
@@ -92,7 +99,23 @@ a:visited {
 }
 
 .column {
-  margin: 0 20px;
+  margin: 0px 20px;
+  border: 4px double #435c2b;
+  border-radius: 6px;
+  padding: 0 10px;
+}
+
+.column h3 {
+  margin: 8px 0 -4px;
+}
+
+.footer {
+  background-color: grey;
+  height: 50px;
+}
+
+.footer-text {
+  padding-top: 10px;
 }
 
 @media (min-width: 768px) {
@@ -114,7 +137,6 @@ a:visited {
 
   .row {
     display: flex;
-    margin: 0 25px;
     flex-wrap: wrap;
   }
 
@@ -124,6 +146,10 @@ a:visited {
 
   .secondary {
     order: -1;
+  }
+
+  .tertiary {
+    margin-top: 15px;
   }
 
   .footer {
@@ -157,6 +183,10 @@ a:visited {
 
   .column {
     flex-basis: 0;
+  }
+
+  .tertiary {
+    margin-top: 0;
   }
 
   .primary {
