@@ -75,6 +75,12 @@ a:visited {
 
 .column {
   background-color: white;
+  margin: 20px;
+}
+
+.content-rows {
+  display: flex;
+  flex-direction: column;
 }
 
 .content-rows div {
@@ -87,14 +93,14 @@ a:visited {
   width: 150px;
   border-radius: 25%;
   float: left;
-  margin: 10px 25px 10px 25px;
+  margin: 10px 25px;
 }
 
 .content-rows h3 {
-  margin: 10px;
+  margin: 20px 10px;
 }
 
-.about-row-secondary img {
+ .about-row-secondary img  {
   float: right;
 }
 
@@ -107,6 +113,30 @@ a:visited {
 
 .column h3 {
   margin: 8px 0 -4px;
+}
+
+/* General Projects Page */
+
+.project-intro {
+  text-align: center;
+}
+
+/* Build The Flock: Projects Page */
+
+.btf-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.btf-image {
+  height: 250px;
+  width: 25%;
+  margin: 25px;
+}
+
+.btf-image:hover {
+  transform: scale(1.75);
 }
 
 .footer {
