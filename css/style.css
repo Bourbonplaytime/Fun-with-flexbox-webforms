@@ -117,25 +117,26 @@ a:visited {
 
 /* General Projects Page */
 
-.project-intro {
+.project-row {
   text-align: center;
+  margin: 20px;
 }
 
 /* Build The Flock: Projects Page */
 
-.btf-images {
+.project-images {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-.btf-image {
+.project-image {
   height: 250px;
   width: 25%;
   margin: 25px;
 }
 
-.btf-image:hover {
+.project-image:hover {
   transform: scale(1.75);
 }
 
