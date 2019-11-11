@@ -163,6 +163,14 @@ a:visited {
   margin: 8px 0 -4px;
 }
 
+.primary {
+  margin-bottom: 20px;
+}
+
+.secondary {
+  margin-bottom: 20px;
+}
+
 /* General Projects Page */
 
 .project-row {
