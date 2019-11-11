@@ -49,13 +49,19 @@
   list-style: none;
 }
 
+.tertiary {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-right: 30px;
+}
+
 .comp {
-  background-color: white;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  margin-right:35px;
+  margin-right: 35px;
 }
 
 .comp li {
@@ -95,12 +101,7 @@ a:visited {
   border: solid 8px black;
   border-radius: 10px;
   padding: 15px;
-  background: linear-gradient(
-    to right,
-    grey,
-    red,
-    grey
-  );
+  background: conic-gradient(red, grey, white, red);
 }
 
 .biopic {
@@ -122,8 +123,9 @@ a:visited {
 }
 
 .column {
-  background-color: white;
+  background: conic-gradient(red, grey, white, red);
   margin: 20px;
+  font-weight: 800;
 }
 
 .content-rows {
