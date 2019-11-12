@@ -50,9 +50,9 @@
 }
 
 .tertiary {
-  display: flex;
+  /*display: flex;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: column; */
   padding-right: 30px;
 }
 
@@ -60,8 +60,8 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
   margin-right: 35px;
+  background-color: white;
 }
 
 .comp li {
@@ -202,7 +202,6 @@ a:visited {
   background-color: black;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
 }
 
 .footer-text {
@@ -213,6 +212,7 @@ a:visited {
 .social-box {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .social-links {
