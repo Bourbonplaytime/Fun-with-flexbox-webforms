@@ -45,8 +45,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-right: 35px;
-  background-color: white;
+  margin-right: 35px;;
 }
 
 .comp li {
@@ -92,11 +91,11 @@
   height: 250px;
   width: 250px;
   border-radius: 50%;
-  transition: all 1s;
   margin-bottom: 50px;
 }
 
 .biopic:hover {
+  transition: all 1s;
   transform: scale3d(1.15, 1.15, 3) rotate(360deg);
   border-radius: 0;
 }
