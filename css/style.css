@@ -1,13 +1,5 @@
 * {
-
-}
-
-.wrap {
-  min-height: calc(100vh - 50px);
-}
-
-.nav {
-  margin: -10px -30px;
+  max-width: 100%;
 }
 
 .flex {
@@ -49,13 +41,6 @@
   list-style: none;
 }
 
-.tertiary {
-  /*display: flex;
-  justify-content: center;
-  flex-direction: column; */
-  padding-right: 30px;
-}
-
 .comp {
   display: flex;
   flex-direction: row;
@@ -82,11 +67,11 @@
   background-color: black;
 }
 
-a,
+ a,
 a:visited {
   text-decoration: none;
   color: white;
-}
+} 
 
 .intro-box {
   background-image: url('../img/skyline.jpg');
@@ -155,7 +140,7 @@ a:visited {
 }
 
 .column {
-  margin: 0px 20px;
+  margin: 0px 20px 20px 20px;;
   border: 4px double #435c2b;
   border-radius: 6px;
   padding: 0 10px;
@@ -165,13 +150,17 @@ a:visited {
   margin: 8px 0 -4px;
 }
 
-.primary {
+/* .primary {
   margin-bottom: 20px;
 }
 
 .secondary {
   margin-bottom: 20px;
 }
+
+.tertiary {
+  margin-bottom: 20px;
+} /* 
 
 /* General Projects Page */
 
@@ -198,27 +187,46 @@ a:visited {
   transform: scale(1.75);
 }
 
-.footer {
+.wrap-foot {
   background-color: black;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-initial {
+  margin-top: -2px;
+}
+
+.footer-final {
+  padding-top: 10px;
+  color: white;
+  padding-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 .footer-text {
   padding-top: 10px;
   color: white;
+  margin-bottom: -20px;
 }
 
 .social-box {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .social-links {
-  height: 50px;
-  width: 50px;
-  padding: 10px 10px;
+  height: 30px;
+  width: 30px;
+  margin: 0 25px;
 }
 
 @media (min-width: 768px) {
@@ -251,14 +259,18 @@ a:visited {
     order: -1;
   }
 
-  .tertiary {
-    margin-top: 15px;
+  .wrap-foot {
+    flex-direction: column;
   }
 
   .footer {
   }
 
   .footer-text {
+  }
+
+  .social-box {
+    align-self: flex-end;
   }
 }
 
@@ -291,5 +303,13 @@ a:visited {
 
   .primary {
     flex-grow: 1.5;
+  }
+
+  .wrap-foot {
+    flex-direction: row;
+  }
+
+  .social-box {
+    justify-content: space-between;
   }
 }
