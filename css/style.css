@@ -182,8 +182,8 @@
 }
 
 .project-image {
-  height: 250px;
-  width: 250px;
+  height: 150px;
+  width: 150px;
   margin: 25px;
 }
 
@@ -298,6 +298,12 @@
 
   .wrap-foot {
     flex-direction: row;
+  }
+
+  .footer {
+    padding-left: 20px;
+    padding-top: 8px;
+    line-height: 0.6;
   }
 }
 
