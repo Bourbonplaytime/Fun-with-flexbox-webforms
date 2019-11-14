@@ -32,6 +32,7 @@
     white
   );
   color: black;
+  width: 150px;
   font-weight: 800;
   text-decoration: none;
   font-size: 20px;
@@ -115,7 +116,6 @@
   border-radius: 5px;
   list-style: none;
   width: 75px;
-  text-align: center;
 }
 
 .comp li:nth-child(even) {
@@ -305,6 +305,10 @@
     padding-top: 8px;
     line-height: 0.6;
   }
+
+  .social-last {
+    padding-right: 10px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -319,11 +323,6 @@
   .main-nav {
     display: flex;
     flex-direction: row;
-  }
-
-  .main-nav li {
-    width: 150px;
-    align-self: auto;
   }
 
   .column {
