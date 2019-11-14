@@ -131,10 +131,18 @@
 .content-rows {
   display: flex;
   flex-direction: column;
+  background-color: grey;
 }
 
 .content-rows div {
-  border: 1px solid;
+  border: 5px solid;
+  border-radius: 18px;
+  background-color: black;
+  color: white;
+  margin: 0 10px;
+}
+
+.content-rows div:nth-of-type(odd) {
   margin: 10px;
 }
 
@@ -143,14 +151,14 @@
   width: 150px;
   border-radius: 25%;
   float: left;
-  margin: 10px 25px;
+  margin: 15px;
 }
 
 .content-rows h3 {
   margin: 20px 10px;
 }
 
-.about-row-secondary img  {
+.content-rows div:nth-of-type(even) img  {
   float: right;
 }
 
