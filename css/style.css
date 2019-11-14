@@ -101,7 +101,7 @@
 }
 
 .row {
-  background-color: #c2c7bb;
+  background-color: grey;;
   padding: 20px;
 }
 
@@ -135,10 +135,10 @@
 }
 
 .content-rows div {
-  border: 5px solid;
-  border-radius: 18px;
-  background-color: black;
-  color: white;
+  border: 4px double #435c2b;
+  border-radius: 6px;
+  background: conic-gradient(red, grey, white, red);
+  color: black;
   margin: 0 10px;
 }
 
@@ -164,27 +164,39 @@
 
 /* General Projects Page */
 
+.projects {
+  background-color: grey;
+  padding: 20px;
+}
+
 .project-row {
   text-align: center;
   margin: 20px;
+  border: 4px double #435c2b;
+  border-radius: 6px;
+  background: conic-gradient(red, grey, white, red);
+  color: black;
 }
-
-/* Build The Flock: Projects Page */
 
 .project-images {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .project-image {
   height: 250px;
-  width: 25%;
+  width: 250px;
   margin: 25px;
 }
 
 .project-image:hover {
   transform: scale(1.75);
+}
+
+.project-row p {
+  font-size: 16px;
 }
 
 /* Footer styles */
@@ -259,6 +271,20 @@
     order: -1;
   }
 
+  .project-images {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .project-image {
+    height: 180px;
+    width: 180px;
+  }
+
+  .project-row p {
+    font-size: 18px;
+  }
+
   .social-box {
     justify-content: center;
   }
@@ -298,6 +324,11 @@
 
   .secondary {
     margin-bottom: 0;
+  }
+
+  .project-image {
+    height: 250px;
+    width: 250px;
   }
 
   .wrap-foot {
