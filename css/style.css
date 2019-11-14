@@ -41,31 +41,6 @@
   list-style: none;
 }
 
-.comp {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin-right: 35px;;
-}
-
-.comp li {
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: 800;
-  background-color: red;
-  color: white;
-  padding: 5px;
-  margin: 5px;
-  border-radius: 5px;
-  list-style: none;
-  width: 75px;
-  text-align: center;
-}
-
-.comp li:nth-child(even) {
-  background-color: black;
-}
-
  a, a:visited {
   text-decoration: none;
   color: white;
@@ -122,9 +97,30 @@
   margin-bottom: 20px;
 }
 
-.column h3 {
-  margin: 8px 0 -4px;
-} 
+.comp {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-right: 35px;;
+}
+
+.comp li {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 800;
+  background-color: red;
+  color: white;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  list-style: none;
+  width: 75px;
+  text-align: center;
+}
+
+.comp li:nth-child(even) {
+  background-color: black;
+}
 
 /* About page styling */
 
@@ -197,6 +193,17 @@
 
 .project-row p {
   font-size: 16px;
+}
+
+/* Contact page styles */
+
+.contact-wrap {
+  background-color: grey;
+  padding: 20px;
+}
+
+.contact-end {
+  padding-bottom: 10px;
 }
 
 /* Footer styles */

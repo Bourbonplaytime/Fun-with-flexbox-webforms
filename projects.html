@@ -25,110 +25,101 @@
 
   <body>
 
-    <div class="wrap">
+    <div class="flex">
 
-      <div class="nav">
+      <h1><a class="name" href="index.html">Matt Harvey Online</a></h1>
 
-        <div class="flex">
+      <ul class="main-nav">
 
-          <h1><a class="name" href="index.html">Matt Harvey Online</a></h1>
+        <a href="about.html"><li>About</li></a>
+        <a href="#"><li>Projects</li></a>
+        <a href="contact.html"><li>Contact</li></a>
 
-          <ul class="main-nav">
+      </ul>
 
-            <a href="#"><li>About</li></a>
-            <a href="projects.html"><li>Projects</li></a>
-            <a href="#"><li>Social Media</li></a>
-            <a href="#"><li>Contact</li></a>
+    </div>
 
-          </ul>
+    <header class="intro-box">
+
+        <h2 class="intro-text">Welcome to Matt Harvey Online</h2>
+
+        <img class="biopic" src="img/bio.jpg" alt="bio picture">
+
+    </header>
+
+    <div class="projects">
+
+      <div class="project-row btf">
+
+        <h2 class="project-intro">Build The Flock Online: A Twitter Networking Front End Project</h2>
+
+        <h3>Click on any project image on this page to see it displayed full screen</h3>
+
+        <div class="project-images">
+
+          <a href="img/btf1.jpg" target="_blank"><img class="project-image" src="img/btf1.jpg" alt="Build The Flock Homepage"></a>
+
+          <a href="img/btf2.jpg" target="_blank"><img class="project-image" src="img/btf2.jpg" alt="Build The Flock News"></a>
+
+          <a href="img/btf3.jpg" target="_blank"><img class="project-image" src="img/btf3.jpg" alt="Build The Flock Add Page"></a>
 
         </div>
+
+        <p> Build The Flock is one of my first front end projects and serves as a web hub for a social media networking campaign to facilitate bringing the Louisville athletics community on twitter more in touch with each other. Before I built the site I was doing mass twitter shoutouts regularly to try to get U of L fans to keep up with each other online. The site made it easier for me to try to promote people following each other and helped a lot of people build their social media presence. This will likely always be a work in progress for me but it was a nice way for me to get my feet wet as I was exploring front end design.</p>
 
       </div>
 
-      <header class="intro-box">
+      <div class="project-row python">
 
-          <h2 class="intro-text">Welcome to Matt Harvey Online</h2>
+        <h2 class="project-intro">Louisville Crime Analysis with Python</h2>
 
-          <img class="biopic" src="img/bio.jpg" alt="bio picture">
+        <div class="project-images">
 
-      </header>
+          <a href="img/python1.jpg" target="_blank"><img class="project-image" src="img/python1.jpg" alt="Crime text chart breakdown"></a>
 
-      <div class="projects">
+          <a href="img/python2.jpg" target="_blank"><img class="project-image" src="img/python2.jpg" alt="Crime pie chart breakdown"></a>
 
-        <div class="project-row btf">
-
-          <h2 class="project-intro">Build The Flock Online: A Twitter Networking Front End Project</h2>
-
-          <h3>Click on any project image on this page to see it displayed full screen</h3>
-
-          <div class="project-images">
-
-            <a href="img/btf1.jpg" target="_blank"><img class="project-image" src="img/btf1.jpg" alt="Build The Flock Homepage"></a>
-
-            <a href="img/btf2.jpg" target="_blank"><img class="project-image" src="img/btf2.jpg" alt="Build The Flock News"></a>
-
-            <a href="img/btf3.jpg" target="_blank"><img class="project-image" src="img/btf3.jpg" alt="Build The Flock Add Page"></a>
-
-          </div>
-
-          <p> Build The Flock is one of my first front end projects and serves as a web hub for a social media networking campaign to facilitate bringing the Louisville athletics community on twitter more in touch with each other. Before I built the site I was doing mass twitter shoutouts regularly to try to get U of L fans to keep up with each other online. The site made it easier for me to try to promote people following each other and helped a lot of people build their social media presence. This will likely always be a work in progress for me but it was a nice way for me to get my feet wet as I was exploring front end design.</p>
+          <a href="img/python3.jpg" target="_blank"><img class="project-image" src="img/python3.jpg" alt="Crime bar chart breakdown"></a>
 
         </div>
 
-        <div class="project-row python">
+        <p>This project reads in a selection of data from Louisville Metro Government on crime within the city into an SQLite database that I created and organized. It then queries that database for custom selection of data which it organizes a plethora of different ways including as a text chart, pie chart, and bar chart. Creating custom visualizations of a data set was a pleasure for me and opened my eyes to a lot of possibilities, creating a curiosity about the further possibilities with Pandas and MatPlotLib as well as what else may be out there to investigate data further.</p>
 
-          <h2 class="project-intro">Louisville Crime Analysis with Python</h2>
+      </div>
 
-          <div class="project-images">
+      <div class="project-row C#">
 
-            <a href="img/python1.jpg" target="_blank"><img class="project-image" src="img/python1.jpg" alt="Crime text chart breakdown"></a>
+        <h2 class="project-intro">Querying UFO Sightings with C#/.NET</h2>
 
-            <a href="img/python2.jpg" target="_blank"><img class="project-image" src="img/python2.jpg" alt="Crime pie chart breakdown"></a>
+        <div class="project-images">
 
-            <a href="img/python3.jpg" target="_blank"><img class="project-image" src="img/python3.jpg" alt="Crime bar chart breakdown"></a>
+          <a href="img/CsProgram.jpg" target="_blank"><img class="project-image" src="img/CsProgram.jpg" alt="Main program code for C# app"></a>
 
-          </div>
+          <a href="img/Cs_Menu.jpg" target="_blank"><img class="project-image" src="img/Cs_Menu.jpg" alt="Illustration of program menu"></a>
 
-          <p>This project reads in a selection of data from Louisville Metro Government on crime within the city into an SQLite database that I created and organized. It then queries that database for custom selection of data which it organizes a plethora of different ways including as a text chart, pie chart, and bar chart. Creating custom visualizations of a data set was a pleasure for me and opened my eyes to a lot of possibilities, creating a curiosity about the further possibilities with Pandas and MatPlotLib as well as what else may be out there to investigate data further.</p>
-
-        </div>
-
-        <div class="project-row C#">
-
-          <h2 class="project-intro">Querying UFO Sightings with C#/.NET</h2>
-
-          <div class="project-images">
-
-            <a href="img/CsProgram.jpg" target="_blank"><img class="project-image" src="img/CsProgram.jpg" alt="Main program code for C# app"></a>
-
-            <a href="img/Cs_Menu.jpg" target="_blank"><img class="project-image" src="img/Cs_Menu.jpg" alt="Illustration of program menu"></a>
-
-            <a href="img/Cs_Louisville.jpg" target="_blank"><img class="project-image" src="img/Cs_Louisville.jpg" alt="Program results for search of Louisville, Ky"></a>
-
-          </div>
-
-          <p>This project takes a .csv file obtained from Kaggle and originally compiled by NASA of reported UFO sightings domestic and international and queries it to create a custom result. This app runs in a console and makes heavy use of system.linq to allow you to search the data by city, state, country, or date and create a data set of your specification. It allows for all four CRUD operations create, read, update and delete to allow a comprehensive functionality for data manipulation.</p>
+          <a href="img/Cs_Louisville.jpg" target="_blank"><img class="project-image" src="img/Cs_Louisville.jpg" alt="Program results for search of Louisville, Ky"></a>
 
         </div>
 
-        <div class="project-row React">
+        <p>This project takes a .csv file obtained from Kaggle and originally compiled by NASA of reported UFO sightings domestic and international and queries it to create a custom result. This app runs in a console and makes heavy use of system.linq to allow you to search the data by city, state, country, or date and create a data set of your specification. It allows for all four CRUD operations create, read, update and delete to allow a comprehensive functionality for data manipulation.</p>
 
-          <h2 class="project-intro">Meet The Flockers Tailgate Meetup React.js App</h2>
+      </div>
 
-          <div class="project-images">
+      <div class="project-row React">
 
-            <a href="img/MTFHome.jpg" target="_blank"><img class="project-image" src="img/MTFHome.jpg" alt="Home page for Meet The Flockers"></a>
+        <h2 class="project-intro">Meet The Flockers Tailgate Meetup React.js App</h2>
 
-            <a href="img/MTFND.jpg" target="_blank"><img class="project-image" src="img/MTFND.jpg" alt="Meet The Flockers Notre Dame game page"></a>
+        <div class="project-images">
 
-            <a href="img/MTFEKU.jpg" target="_blank"><img class="project-image" src="img/MTFEKU.jpg" alt="Meet The Flockers Eastern Kentucky game page "></a>
+          <a href="img/MTFHome.jpg" target="_blank"><img class="project-image" src="img/MTFHome.jpg" alt="Home page for Meet The Flockers"></a>
 
-          </div>
+          <a href="img/MTFND.jpg" target="_blank"><img class="project-image" src="img/MTFND.jpg" alt="Meet The Flockers Notre Dame game page"></a>
 
-          <p>Meet The Flockers is a React.js web app serving as a tool to facilitate tailgate networking. Meet The Flockers calls 3 apis for data on weather, game day statistics and a google map of the area surrounding the stadium for each game, home and away. This allows for people to highlight where they will be tailgating as well as providing weather info for pre game preparation and statistical information to provide talking points to discuss while meeting people in the tailgate parking lots.</p>
+          <a href="img/MTFEKU.jpg" target="_blank"><img class="project-image" src="img/MTFEKU.jpg" alt="Meet The Flockers Eastern Kentucky game page "></a>
 
         </div>
+
+        <p>Meet The Flockers is a React.js web app serving as a tool to facilitate tailgate networking. Meet The Flockers calls 3 apis for data on weather, game day statistics and a google map of the area surrounding the stadium for each game, home and away. This allows for people to highlight where they will be tailgating as well as providing weather info for pre game preparation and statistical information to provide talking points to discuss while meeting people in the tailgate parking lots.</p>
 
       </div>
 
