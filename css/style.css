@@ -107,7 +107,7 @@
 
 .comp li {
   text-decoration: none;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 800;
   background-color: red;
   color: white;
@@ -276,6 +276,10 @@
 
   .secondary {
     order: -1;
+  }
+
+  .comp li {
+    font-size: 16px;
   }
 
   .project-images {
