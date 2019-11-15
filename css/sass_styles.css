@@ -7,17 +7,22 @@
   flex-grow: 1;
   background-color: black;
 }
-
-.name:visited,
-.name {
+.flex .name, .flex .name:visited {
   color: black;
   background: linear-gradient(to right, red, grey, white);
   padding: 5px;
   margin: 5px;
   border-radius: 5px;
 }
-
-.main-nav li {
+.flex .name:hover, .flex .name:visited:hover {
+  color: white;
+  background: linear-gradient(to left, red, grey, black);
+}
+.flex a, .flex a:visited {
+  text-decoration: none;
+  color: white;
+}
+.flex .main-nav li {
   background: linear-gradient(to right, red, grey, white);
   color: black;
   width: 150px;
@@ -29,21 +34,25 @@
   border-radius: 5px;
   list-style: none;
 }
-
-a, a:visited {
-  text-decoration: none;
+.flex .main-nav li:hover {
   color: white;
+  background: linear-gradient(to left, red, grey, black);
 }
 
+/* Experiment with this later and see if it has to be global to not mess up styling on other pages
+
+a, a:visited {
+    text-decoration: none;
+    color: white;
+} */
 /* intro styling */
-.intro-box {
+.intro {
   background-image: url("../img/Skyline.jpg");
   background-size: 100% 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 .intro-text {
   color: black;
   border: solid 8px black;
@@ -58,7 +67,6 @@ a, a:visited {
   border-radius: 50%;
   margin-bottom: 50px;
 }
-
 .biopic:hover {
   transition: all 1s;
   transform: scale3d(1.15, 1.15, 3) rotate(360deg);
@@ -95,9 +103,9 @@ a, a:visited {
   margin-right: 35px;
 }
 .comp li {
-  text-decoration: none;
   font-size: 14px;
   font-weight: 800;
+  text-align: center;
   background-color: red;
   color: white;
   padding: 5px;
