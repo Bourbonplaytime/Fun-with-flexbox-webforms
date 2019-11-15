@@ -12,18 +12,18 @@ red);
     align-items: center;
     flex-grow: 1;
     background-color: black;
-  }
+}
   
-  .name:visited,
-  .name {
+.name:visited,
+.name {
     color: black;
     background: $theme-gradient;
     padding: 5px;
     margin: 5px;
     border-radius: 5px;
-  }
-  
-  .main-nav li {
+}
+
+.main-nav li {
     background: $theme-gradient;
     color: black;
     width: 150px;
@@ -34,32 +34,88 @@ red);
     margin: 5px;
     border-radius: 5px;
     list-style: none;
-  }
-  
-   a, a:visited {
+}
+
+a, a:visited {
     text-decoration: none;
     color: white;
-  }
+}
+
+/* intro styling */
+
+.intro-box {
+    background-image: url('../img/Skyline.jpg');
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.intro-text {
+    color: black;
+    border: solid 8px black;
+    border-radius: 10px;
+    padding: 15px;
+    background: $theme-conic-gradient;
+}
+
+.biopic {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    margin-bottom: 50px;
+}
+
+.biopic:hover {
+    transition: all 1s;
+    transform: scale3d(1.15, 1.15, 3) rotate(360deg);
+    border-radius: 0;
+}
 
 /* index styling */
 
-.name:visited,
-.name {
-    background: $theme-gradient;
-}
-
-.main-nav li {
-    background: $theme-gradient;
-}
-
-.intro-text {
-    background: $theme-conic-gradient;
-}
-
+.row {
+    background-color: grey;;
+    padding: 20px;
+  }
+  
 .column {
+    margin: 0px 20px;
+    border: 4px double #435c2b;
+    border-radius: 6px;
+    padding: 0 10px;
     background: $theme-conic-gradient;
+    font-weight: 800;
 }
 
-.content-rows div {
-    background: $theme-conic-gradient;
+.primary {
+    margin-bottom: 20px;
+}
+
+.secondary {
+    margin-bottom: 20px;
+}
+
+.comp {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: 35px;
+}
+
+.comp li {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 800;
+    background-color: red;
+    color: white;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    list-style: none;
+    width: 75px;
+}
+
+.comp li:nth-child(even) {
+    background-color: black;
 }
