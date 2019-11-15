@@ -1,0 +1,65 @@
+/* variables */
+$theme-gradient: linear-gradient(to right, red, grey,white);
+
+$theme-conic-gradient: conic-gradient(red, grey, white, 
+red);
+
+/* nav styling */
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    background-color: black;
+  }
+  
+  .name:visited,
+  .name {
+    color: black;
+    background: $theme-gradient;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+  }
+  
+  .main-nav li {
+    background: $theme-gradient;
+    color: black;
+    width: 150px;
+    font-weight: 800;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    list-style: none;
+  }
+  
+   a, a:visited {
+    text-decoration: none;
+    color: white;
+  }
+
+/* index styling */
+
+.name:visited,
+.name {
+    background: $theme-gradient;
+}
+
+.main-nav li {
+    background: $theme-gradient;
+}
+
+.intro-text {
+    background: $theme-conic-gradient;
+}
+
+.column {
+    background: $theme-conic-gradient;
+}
+
+.content-rows div {
+    background: $theme-conic-gradient;
+}

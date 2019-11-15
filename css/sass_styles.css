@@ -1,3 +1,60 @@
+/* variables */
+/* nav styling */
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  background-color: black;
+}
 
+.name:visited,
+.name {
+  color: black;
+  background: linear-gradient(to right, red, grey, white);
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.main-nav li {
+  background: linear-gradient(to right, red, grey, white);
+  color: black;
+  width: 150px;
+  font-weight: 800;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  list-style: none;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+/* index styling */
+.name:visited,
+.name {
+  background: linear-gradient(to right, red, grey, white);
+}
+
+.main-nav li {
+  background: linear-gradient(to right, red, grey, white);
+}
+
+.intro-text {
+  background: conic-gradient(red, grey, white, red);
+}
+
+.column {
+  background: conic-gradient(red, grey, white, red);
+}
+
+.content-rows div {
+  background: conic-gradient(red, grey, white, red);
+}
 
 /*# sourceMappingURL=sass_styles.css.map */
