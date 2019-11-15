@@ -94,7 +94,6 @@ a, a:visited {
   flex-wrap: wrap;
   margin-right: 35px;
 }
-
 .comp li {
   text-decoration: none;
   font-size: 14px;
@@ -107,9 +106,122 @@ a, a:visited {
   list-style: none;
   width: 75px;
 }
-
 .comp li:nth-child(even) {
   background-color: black;
+}
+
+/* Footer styling */
+.wrap-foot {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-initial {
+  margin-top: -2px;
+}
+
+.footer-final {
+  padding: 10px 0;
+  margin-bottom: 0px;
+}
+
+.footer-text {
+  padding-top: 10px;
+  color: white;
+  margin-bottom: -10px;
+}
+
+.social-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.social-links {
+  height: 30px;
+  width: 30px;
+  margin: 0 10px;
+}
+
+@media (min-width: 768px) {
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+  }
+  .main-nav li {
+    width: 150px;
+    align-self: auto;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .column {
+    flex: 1 40%;
+  }
+
+  .secondary {
+    order: -1;
+  }
+
+  .comp li {
+    font-size: 16px;
+  }
+
+  .wrap-foot {
+    flex-direction: row;
+  }
+
+  .social-box {
+    justify-content: center;
+  }
+
+  .footer {
+    padding-left: 20px;
+    padding-top: 8px;
+    line-height: 0.6;
+  }
+
+  .social-last {
+    padding-right: 10px;
+  }
+}
+@media (min-width: 1200px) {
+  .flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100px;
+    padding: 0 50px;
+  }
+
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .column {
+    flex-basis: 0;
+  }
+
+  .primary {
+    flex-grow: 1.5;
+    margin-bottom: 0;
+  }
+
+  .secondary {
+    margin-bottom: 0;
+  }
 }
 
 /*# sourceMappingURL=sass_styles.css.map */
