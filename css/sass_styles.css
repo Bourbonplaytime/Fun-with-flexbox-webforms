@@ -1,5 +1,3 @@
-/* Variables */
-/* Mixins */
 /* nav styling */
 .flex {
   display: flex;
@@ -40,13 +38,6 @@
   background: linear-gradient(to left, red, grey, black);
 }
 
-/* Experiment with this later and see if it has to be global to not mess up styling on other pages
-
-a, a:visited {
-    text-decoration: none;
-    color: white;
-} */
-/* intro styling */
 .intro {
   background-image: url("../img/Skyline.jpg");
   background-size: 100% 100%;
@@ -80,7 +71,7 @@ a, a:visited {
   padding: 20px;
 }
 
-.column {
+.tertiary, .secondary, .primary {
   margin: 0px 20px;
   border: 4px double #435c2b;
   border-radius: 6px;
@@ -131,17 +122,17 @@ a, a:visited {
   flex-direction: column;
   text-align: center;
 }
+.footer .footer-final, .footer .footer-initial {
+  padding-top: 10px;
+  color: white;
+  margin-bottom: -10px;
+}
 .footer-initial {
   margin-top: -2px;
 }
 .footer-final {
   padding: 10px 0;
   margin-bottom: 0px;
-}
-.footer-text {
-  padding-top: 10px;
-  color: white;
-  margin-bottom: -10px;
 }
 
 .social-box {
@@ -150,7 +141,7 @@ a, a:visited {
   justify-content: center;
 }
 
-.social-links {
+.social-links, .social-last {
   height: 30px;
   width: 30px;
   margin: 0 10px;
@@ -171,7 +162,7 @@ a, a:visited {
     flex-wrap: wrap;
   }
 
-  .column {
+  .primary, .secondary, .tertiary {
     flex: 1 40%;
   }
 
@@ -215,7 +206,7 @@ a, a:visited {
     flex-direction: row;
   }
 
-  .column {
+  .primary, .secondary, .tertiary {
     flex-basis: 0;
   }
 

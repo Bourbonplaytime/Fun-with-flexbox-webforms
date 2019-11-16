@@ -1,4 +1,4 @@
-/* Variables */
+// Variables 
 $theme-gradient: linear-gradient(to right, red, grey, white);
 
 $theme-gradient-flip: linear-gradient(to left, red, grey, black);
@@ -6,7 +6,7 @@ $theme-gradient-flip: linear-gradient(to left, red, grey, black);
 $theme-conic-gradient: conic-gradient(red, grey, white, 
 red);
 
-/* Mixins */
+// Mixins 
 
 @mixin column {
     display: flex;
@@ -60,14 +60,14 @@ red);
     }
 }
 
-/* Experiment with this later and see if it has to be global to not mess up styling on other pages
+// Experiment with this later and see if it has to be global to not mess up styling on other pages 
 
-a, a:visited {
-    text-decoration: none;
-    color: white;
-} */
+//a, a:visited {
+//   text-decoration: none;
+//   color: white;
+//}
 
-/* intro styling */
+// intro styling
 
 .intro {
     background-image: url('../img/Skyline.jpg');
@@ -98,11 +98,11 @@ a, a:visited {
 /* index styling */
 
 .row {
-    background-color: grey;;
+    background-color: grey;
     padding: 20px;
 }
   
-.column {
+%column {
     margin: 0px 20px;
     border: 4px double #435c2b;
     border-radius: 6px;
@@ -112,11 +112,17 @@ a, a:visited {
 }
 
 .primary {
+    @extend %column;
     margin-bottom: 20px;
 }
 
 .secondary {
+    @extend %column;
     margin-bottom: 20px;
+}
+
+.tertiary {
+    @extend %column;
 }
 
 .comp {
@@ -150,17 +156,19 @@ a, a:visited {
 .footer {
     @include column;
     text-align: center;
-    &-initial {
-        margin-top: -2px;
-    }
-    &-final {
-        padding: 10px 0;
-        margin-bottom: 0px;
-    }
-    &-text {
+    %footer-text {
         padding-top: 10px; 
         color: white;
         margin-bottom: -10px;
+    }
+    &-initial {
+        @extend %footer-text;
+        margin-top: -2px
+    }
+    &-final {
+        @extend %footer-text;
+        padding: 10px 0;
+        margin-bottom: 0px;
     }
 }
   
@@ -173,6 +181,10 @@ a, a:visited {
     height: 30px;
     width: 30px;
     margin: 0 10px;
+}
+
+.social-last {
+    @extend .social-links;
 }
 
 @media (min-width: 768px) {
@@ -190,7 +202,7 @@ a, a:visited {
         flex-wrap: wrap;
     }
   
-    .column {
+    %column {
         flex: 1 40%;
     }
   
@@ -233,7 +245,7 @@ a, a:visited {
       @include row;
     }
   
-    .column {
+    %column {
       flex-basis: 0;
     }
   
