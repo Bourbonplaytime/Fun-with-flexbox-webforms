@@ -5,6 +5,12 @@
     align-items: center;
     flex-grow: 1;
     background-color: black;
+    @media (min-width: 1200px) {
+        @include row;
+        justify-content: space-between;
+        height: 100px;
+        padding: 0 50px;
+    }
     .name, .name:visited {
         color: black;
         background: $theme-gradient;
@@ -21,6 +27,9 @@
         color: white;
     }
     .main-nav {
+        @media (min-width: 768px) {
+            @include row;
+        }
         li {
         background: $theme-gradient;
         color: black;
@@ -32,6 +41,10 @@
         margin: 5px;
         border-radius: 5px;
         list-style: none;
+        @media (min-width: 768px) {
+            width: 150px;
+            align-self: auto;
+        }
             &:hover {
                 color: white;
                 background: $theme-gradient-flip;     

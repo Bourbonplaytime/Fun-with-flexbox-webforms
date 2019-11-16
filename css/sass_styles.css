@@ -6,6 +6,15 @@
   flex-grow: 1;
   background-color: black;
 }
+@media (min-width: 1200px) {
+  .flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100px;
+    padding: 0 50px;
+  }
+}
 .flex .name, .flex .name:visited {
   color: black;
   background: linear-gradient(to right, red, grey, white);
@@ -21,6 +30,12 @@
   text-decoration: none;
   color: white;
 }
+@media (min-width: 768px) {
+  .flex .main-nav {
+    display: flex;
+    flex-direction: row;
+  }
+}
 .flex .main-nav li {
   background: linear-gradient(to right, red, grey, white);
   color: black;
@@ -33,11 +48,18 @@
   border-radius: 5px;
   list-style: none;
 }
+@media (min-width: 768px) {
+  .flex .main-nav li {
+    width: 150px;
+    align-self: auto;
+  }
+}
 .flex .main-nav li:hover {
   color: white;
   background: linear-gradient(to left, red, grey, black);
 }
 
+/* intro styling */
 .intro {
   background-image: url("../img/Skyline.jpg");
   background-size: 100% 100%;
@@ -65,57 +87,16 @@
   border-radius: 0;
 }
 
-/* Footer styling */
-.wrap-foot {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: black;
-}
-
-.footer {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-.footer .footer-final, .footer .footer-initial {
-  padding-top: 10px;
-  color: white;
-  margin-bottom: -10px;
-}
-.footer-initial {
-  margin-top: -2px;
-}
-.footer-final {
-  padding: 10px 0;
-  margin-bottom: 0px;
-}
-
-.social-box {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.social-links, .social-last {
-  height: 30px;
-  width: 30px;
-  margin: 0 10px;
-}
-
-.social-last {
-  margin-right: 20px;
-}
-
-a, a:visited {
-  text-decoration: none;
-  color: white;
-}
-
 /* index styling */
 .row {
   background-color: grey;
   padding: 20px;
+}
+@media (min-width: 768px) {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .tertiary, .secondary, .primary {
@@ -126,13 +107,35 @@ a, a:visited {
   background: conic-gradient(red, grey, white, red);
   font-weight: 800;
 }
+@media (min-width: 768px) {
+  .tertiary, .secondary, .primary {
+    flex: 1 40%;
+  }
+}
+@media (min-width: 1200px) {
+  .tertiary, .secondary, .primary {
+    flex-basis: 0;
+  }
+}
 
 .primary {
   margin-bottom: 20px;
 }
+@media (min-width: 1200px) {
+  .primary {
+    flex-grow: 1.5;
+    margin-bottom: 0;
+  }
+}
 
 .secondary {
   margin-bottom: 20px;
+}
+@media (min-width: 1200px) {
+  .secondary {
+    margin-bottom: 0;
+    order: -1;
+  }
 }
 
 .comp {
@@ -155,78 +158,75 @@ a, a:visited {
 .comp li:nth-child(even) {
   background-color: black;
 }
-
 @media (min-width: 768px) {
-  .main-nav {
-    display: flex;
-    flex-direction: row;
-  }
-  .main-nav li {
-    width: 150px;
-    align-self: auto;
-  }
-
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .primary, .secondary, .tertiary {
-    flex: 1 40%;
-  }
-
-  .secondary {
-    order: -1;
-  }
-
-  .comp li {
+  .comp {
     font-size: 16px;
   }
+}
 
+/* Footer styling */
+.wrap-foot {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: black;
+}
+@media (min-width: 768px) {
   .wrap-foot {
     flex-direction: row;
   }
+}
 
+.footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+@media (min-width: 768px) {
   .footer {
     padding-left: 20px;
     padding-top: 8px;
     line-height: 0.6;
   }
+}
+.footer .footer-final, .footer .footer-initial {
+  padding-top: 10px;
+  color: white;
+  margin-bottom: -10px;
+}
+.footer-initial {
+  margin-top: -2px;
+}
+.footer-final {
+  padding: 10px 0;
+  margin-bottom: 0px;
+}
 
+.social-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+@media (min-width: 768px) {
   .social-box {
     justify-content: center;
   }
-
-  .social-last {
-    padding-right: 10px;
-  }
 }
-@media (min-width: 1200px) {
-  .flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 100px;
-    padding: 0 50px;
-  }
 
-  .main-nav {
-    display: flex;
-    flex-direction: row;
-  }
+.social-links, .social-last {
+  height: 30px;
+  width: 30px;
+  margin: 0 10px;
+}
 
-  .primary, .secondary, .tertiary {
-    flex-basis: 0;
-  }
+.social-last {
+  margin-right: 20px;
+}
 
-  .primary {
-    flex-grow: 1.5;
-    margin-bottom: 0;
-  }
-
-  .secondary {
-    margin-bottom: 0;
-  }
+/* global styling */
+a, a:visited {
+  text-decoration: none;
+  color: white;
 }
 
 /*# sourceMappingURL=sass_styles.css.map */

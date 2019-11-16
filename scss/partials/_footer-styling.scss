@@ -4,11 +4,19 @@
     @include column;
     justify-content: space-between;
     background-color: black;
+    @media (min-width: 768px) {
+        flex-direction: row;
+    }
  }
   
 .footer {
     @include column;
     text-align: center;
+    @media (min-width: 768px) {
+        padding-left: 20px;
+        padding-top: 8px;
+        line-height: 0.6;
+    }
     %footer-text {
         padding-top: 10px; 
         color: white;
@@ -28,6 +36,9 @@
 .social-box {
     @include row;
     justify-content: center;
+    @media (min-width: 768px) {
+        justify-content: center;
+    }
 }
   
 .social-links {

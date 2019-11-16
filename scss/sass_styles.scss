@@ -1,136 +1,15 @@
 // Partial imports
-@import 'partials/variables';
-@import 'partials/mixins';
-@import 'partials/nav-styling';
-@import 'partials/intro-styling';
-@import 'partials/footer-styling';
+@import 'partials/variables', 
+'partials/mixins', 
+'partials/nav-styling', 
+'partials/intro-styling', 
+'partials/index-styling',
+'partials/footer-styling';
 
 
-// global styling
+/* global styling */
 
 a, a:visited {
    text-decoration: none;
    color: white;
-}
-
-/* index styling */
-
-.row {
-    background-color: grey;
-    padding: 20px;
-}
-  
-%column {
-    margin: 0px 20px;
-    border: 4px double #435c2b;
-    border-radius: 6px;
-    padding: 0 10px;
-    background: $theme-conic-gradient;
-    font-weight: 800;
-}
-
-.primary {
-    @extend %column;
-    margin-bottom: 20px;
-}
-
-.secondary {
-    @extend %column;
-    margin-bottom: 20px;
-}
-
-.tertiary {
-    @extend %column;
-}
-
-.comp {
-    @include row;
-    flex-wrap: wrap;
-    li {
-        font-size: 14px;
-        font-weight: 800;
-        text-align: center;
-        background-color: red;
-        color: white;
-        padding: 5px;
-        margin: 5px;
-        border-radius: 5px;
-        list-style: none;
-        width: 75px;
-    }
-    li:nth-child(even) {
-        background-color: black;
-    }
-}
-
-@media (min-width: 768px) {
-  
-    .main-nav {
-      @include row;
-      li {
-        width: 150px;
-        align-self: auto;
-      }
-    }
-  
-    .row {
-        display: flex;
-        flex-wrap: wrap;
-    }
-  
-    %column {
-        flex: 1 40%;
-    }
-  
-    .secondary {
-        order: -1;
-    }
-  
-    .comp li {
-        font-size: 16px;
-    }
-
-    .wrap-foot {
-        flex-direction: row;
-    }
-    
-    .footer {
-        padding-left: 20px;
-        padding-top: 8px;
-        line-height: 0.6;
-    }
-
-    .social-box {
-        justify-content: center;
-    }
-    
-    .social-last {
-        padding-right: 10px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .flex {
-      @include row;
-      justify-content: space-between;
-      height: 100px;
-      padding: 0 50px;
-    }
-  
-    .main-nav {
-      @include row;
-    }
-  
-    %column {
-      flex-basis: 0;
-    }
-  
-    .primary {
-      flex-grow: 1.5;
-      margin-bottom: 0;
-    }
-  
-    .secondary {
-      margin-bottom: 0;
-    }
 }
