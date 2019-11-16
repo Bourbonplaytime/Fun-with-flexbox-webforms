@@ -1,0 +1,41 @@
+/* nav styling */
+
+.flex {
+    @include column;
+    align-items: center;
+    flex-grow: 1;
+    background-color: black;
+    .name, .name:visited {
+        color: black;
+        background: $theme-gradient;
+        padding: 5px;
+        margin: 5px;
+        border-radius: 5px;
+        &:hover {
+            color: white;
+            background: $theme-gradient-flip; 
+        }
+    }
+    a, a:visited {
+        text-decoration: none;
+        color: white;
+    }
+    .main-nav {
+        li {
+        background: $theme-gradient;
+        color: black;
+        width: 150px;
+        font-weight: 800;
+        text-decoration: none;
+        font-size: 20px;
+        padding: 5px;
+        margin: 5px;
+        border-radius: 5px;
+        list-style: none;
+            &:hover {
+                color: white;
+                background: $theme-gradient-flip;     
+            }
+        }
+    }
+}

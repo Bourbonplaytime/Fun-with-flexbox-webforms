@@ -1,0 +1,42 @@
+/* Footer styling */
+
+.wrap-foot {
+    @include column;
+    justify-content: space-between;
+    background-color: black;
+ }
+  
+.footer {
+    @include column;
+    text-align: center;
+    %footer-text {
+        padding-top: 10px; 
+        color: white;
+        margin-bottom: -10px;
+    }
+    &-initial {
+        @extend %footer-text;
+        margin-top: -2px
+    }
+    &-final {
+        @extend %footer-text;
+        padding: 10px 0;
+        margin-bottom: 0px;
+    }
+}
+  
+.social-box {
+    @include row;
+    justify-content: center;
+}
+  
+.social-links {
+    height: 30px;
+    width: 30px;
+    margin: 0 10px;
+}
+
+.social-last {
+    @extend .social-links;
+    margin-right: 20px;
+}

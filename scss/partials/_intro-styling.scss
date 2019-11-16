@@ -1,0 +1,27 @@
+// intro styling
+
+.intro {
+    background-image: url('../img/Skyline.jpg');
+    background-size: 100% 100%;
+    @include column;
+    align-items: center;
+    &-text {
+        color: black;
+        border: solid 8px black;
+        border-radius: 10px;
+        padding: 15px;
+        background: $theme-conic-gradient;
+    }
+}
+
+.biopic {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    margin-bottom: 50px;
+    &:hover {
+        transition: all 1s;
+        transform: scale3d(1.15, 1.15, 3) rotate(360deg);
+        border-radius: 0;
+    }
+}
