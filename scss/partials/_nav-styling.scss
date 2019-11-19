@@ -1,12 +1,12 @@
 /* nav styling */
 
 .flex {
-    @include column;
+    @include flex;
     align-items: center;
     flex-grow: 1;
     background-color: black;
     @media (min-width: 1200px) {
-        @include row;
+        @include flex ($dir: row);
         justify-content: space-between;
         height: 100px;
         padding: 0 50px;
@@ -28,7 +28,7 @@
     }
     .main-nav {
         @media (min-width: 768px) {
-            @include row;
+            @include flex(row);
         }
         li {
         background: $theme-gradient;

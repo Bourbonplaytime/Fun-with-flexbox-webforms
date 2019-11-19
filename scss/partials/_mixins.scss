@@ -1,11 +1,6 @@
 // Mixins
 
-@mixin column {
+@mixin flex ($dir: column) {
     display: flex;
-    flex-direction: column;
-}
-
-@mixin row {
-    display: flex;
-    flex-direction: row;
+    flex-direction: $dir;
 }

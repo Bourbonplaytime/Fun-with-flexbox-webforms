@@ -47,7 +47,7 @@
 }
 
 .comp {
-    @include row;
+    @include flex(row);
     flex-wrap: wrap;
     li {
         font-size: 14px;

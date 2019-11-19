@@ -1,7 +1,7 @@
 /* Footer styling */
 
 .wrap-foot {
-    @include column;
+    @include flex;
     justify-content: space-between;
     background-color: black;
     @media (min-width: 768px) {
@@ -10,7 +10,7 @@
  }
   
 .footer {
-    @include column;
+    @include flex;
     text-align: center;
     @media (min-width: 768px) {
         padding-left: 20px;
@@ -34,7 +34,7 @@
 }
   
 .social-box {
-    @include row;
+    @include flex(row);
     justify-content: center;
     @media (min-width: 768px) {
         justify-content: center;
