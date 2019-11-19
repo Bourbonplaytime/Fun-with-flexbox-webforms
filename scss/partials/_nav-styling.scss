@@ -5,7 +5,7 @@
     align-items: center;
     flex-grow: 1;
     background-color: black;
-    @media (min-width: 1200px) {
+    @media (min-width: $desk) {
         @include flex ($dir: row);
         justify-content: space-between;
         height: 100px;
@@ -27,7 +27,7 @@
         color: white;
     }
     .main-nav {
-        @media (min-width: 768px) {
+        @media (min-width: $tab) {
             @include flex(row);
         }
         li {
@@ -41,7 +41,7 @@
         margin: 5px;
         border-radius: 5px;
         list-style: none;
-        @media (min-width: 768px) {
+        @media (min-width: $tab) {
             width: 150px;
             align-self: auto;
         }
