@@ -99,7 +99,7 @@
   }
 }
 
-.tertiary, .secondary, .primary {
+.contact, .tertiary, .secondary, .primary {
   margin: 0px 20px;
   border: 4px double #435c2b;
   border-radius: 6px;
@@ -108,12 +108,12 @@
   font-weight: 800;
 }
 @media (min-width: 768px) {
-  .tertiary, .secondary, .primary {
+  .contact, .tertiary, .secondary, .primary {
     flex: 1 40%;
   }
 }
 @media (min-width: 1200px) {
-  .tertiary, .secondary, .primary {
+  .contact, .tertiary, .secondary, .primary {
     flex-basis: 0;
   }
 }
@@ -256,6 +256,16 @@
     width: 300px;
   }
 }
+/* Contact page styles */
+.contact-wrap {
+  background-color: grey;
+  padding: 20px;
+}
+
+.contact-end {
+  padding-bottom: 10px;
+}
+
 /* Footer styling */
 .wrap-foot {
   display: flex;

@@ -1,0 +1,14 @@
+/* Contact page styles */
+
+.contact-wrap {
+    background-color: grey;
+    padding: 20px;
+}
+
+.contact {
+    @extend %column;
+}
+
+.contact-end {
+padding-bottom: 10px;
+}

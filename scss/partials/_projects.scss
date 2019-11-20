@@ -10,13 +10,12 @@
   margin: 20px;
   border: 4px double #435c2b;
   border-radius: 6px;
-  background: conic-gradient(red, grey, white, red);
+  background: $theme-conic-gradient;
   color: black;
 }
 
 .project-images {
-  display: flex;
-  flex-direction: column;
+  @include flex;
   justify-content: center;
   align-items: center;
 }
@@ -37,8 +36,7 @@
 
 @media (min-width: 768px) {
     .project-images {
-        display: flex;
-        flex-direction: row;
+        @include flex(row);
     }
 
     .project-image {
