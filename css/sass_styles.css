@@ -170,7 +170,6 @@
   flex-direction: column;
   background-color: grey;
 }
-
 .content-rows div {
   border: 4px double #435c2b;
   border-radius: 6px;
@@ -178,11 +177,12 @@
   color: black;
   margin: 0 10px;
 }
-
 .content-rows div:nth-of-type(odd) {
   margin: 10px;
 }
-
+.content-rows div:nth-of-type(even) img {
+  float: right;
+}
 .content-rows img {
   height: 125px;
   width: 150px;
@@ -190,13 +190,8 @@
   float: left;
   margin: 15px;
 }
-
 .content-rows h3 {
   margin: 20px 10px;
-}
-
-.content-rows div:nth-of-type(even) img {
-  float: right;
 }
 
 /* General Projects Page */
@@ -261,7 +256,6 @@
   background-color: grey;
   padding: 20px;
 }
-
 .contact-end {
   padding-bottom: 10px;
 }
