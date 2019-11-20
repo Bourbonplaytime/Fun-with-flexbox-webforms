@@ -164,6 +164,41 @@
   }
 }
 
+/* About page styling */
+.content-rows {
+  display: flex;
+  flex-direction: column;
+  background-color: grey;
+}
+
+.content-rows div {
+  border: 4px double #435c2b;
+  border-radius: 6px;
+  background: conic-gradient(red, grey, white, red);
+  color: black;
+  margin: 0 10px;
+}
+
+.content-rows div:nth-of-type(odd) {
+  margin: 10px;
+}
+
+.content-rows img {
+  height: 125px;
+  width: 150px;
+  border-radius: 25%;
+  float: left;
+  margin: 15px;
+}
+
+.content-rows h3 {
+  margin: 20px 10px;
+}
+
+.content-rows div:nth-of-type(even) img {
+  float: right;
+}
+
 /* Footer styling */
 .wrap-foot {
   display: flex;
