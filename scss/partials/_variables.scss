@@ -1,6 +1,6 @@
 // Variables 
 
-$theme-grey: #666666;
+$theme-grey: #4d4d4d;
 
 $theme-gradient: linear-gradient(to right, red, $theme-grey, white);
 
@@ -14,3 +14,15 @@ red);
 $tab: 768px;
 
 $desk: 1200px;
+
+// Keyframes
+
+@keyframes fadeOut  {
+    0% {
+        background: red;
+    }
+
+    100% {
+        background: white;
+    }
+}
