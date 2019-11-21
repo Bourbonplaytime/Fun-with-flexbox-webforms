@@ -1,57 +1,44 @@
 /* General Projects Page */
 
-.projects {
+.project {
   background-color: grey;
   padding: 20px;
-}
-
-.project-row {
-  text-align: center;
-  margin: 20px;
-  border: 4px double #435c2b;
-  border-radius: 6px;
-  background: $theme-conic-gradient;
-  color: black;
-}
-
-.project-images {
-  @include flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.project-image {
-  height: 150px;
-  width: 150px;
-  margin: 25px;
-}
-
-.project-image:hover {
-  transform: scale(1.5);
-}
-
-.project-row p {
-  font-size: 16px;
-}
-
-@media (min-width: 768px) {
-    .project-images {
-        @include flex(row);
+  &-row {
+    text-align: center;
+    margin: 20px;
+    border: 4px double #435c2b;
+    border-radius: 6px;
+    background: $theme-conic-gradient;
+    color: black;
+    p {
+      font-size: 16px;
+      @media (min-width: $tab) {
+        font-size: 18px;
+      }
     }
-
-    .project-image {
-        height: 180px;
+  }
+  &-images {
+    @include flex;
+    justify-content: center;
+    align-items: center;
+    @media (min-width: $tab) {
+      @include flex(row);
+    }
+  }
+  &-image {
+    height: 150px;
+    width: 150px;
+    margin: 25px;
+    &:hover {
+      transform: scale(1.5);
+    }
+    @media (min-width: $tab) {
+      height: 180px;
         width: 180px;
     }
-
-    .project-row p {
-        font-size: 18px;
+    @media (min-width: $desk) {
+      height: 300px;
+      width: 300px;
     }
-}
-
-@media (min-width: 1200px) {
-    .project-image {
-        height: 300px;
-        width: 300px;
-    }
+  }
 }
