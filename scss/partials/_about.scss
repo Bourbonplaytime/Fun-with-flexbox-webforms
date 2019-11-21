@@ -2,7 +2,7 @@
 
 .content-rows {
   @include flex;
-  background-color: grey;
+  background-color: $theme-grey;
   div {
     border: 4px double #435c2b;
     border-radius: 6px;

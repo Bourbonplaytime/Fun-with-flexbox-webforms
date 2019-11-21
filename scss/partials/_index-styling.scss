@@ -1,7 +1,7 @@
 /* index styling */
 
 .row {
-    background-color: grey;
+    background-color: $theme-grey;
     padding: 20px;
     @media (min-width: $tab) {
         display: flex;
