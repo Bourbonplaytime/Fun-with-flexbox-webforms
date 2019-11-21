@@ -1,18 +1,325 @@
-/* Error: Undefined variable.
- *   ,
- * 4 |   background-color: $themgrey;
- *   |                     ^^^^^^^^^
- *   '
- *   scss\partials\_projects.scss 4:21  @import
- *   scss\sass_styles.scss 8:1          root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 4 \2502    background-color: $themgrey;\d\a   \2502                      ^^^^^^^^^\a   \2575 \a   scss\\partials\\_projects.scss 4:21  @import\a   scss\\sass_styles.scss 8:1          root stylesheet";
+/* nav styling */
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  background-color: black;
 }
+@media (min-width: 1200px) {
+  .flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100px;
+    padding: 0 50px;
+  }
+}
+.flex .name, .flex .name:visited {
+  color: black;
+  background: linear-gradient(to right, red, #ffe6e6, white);
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+}
+.flex .name:hover, .flex .name:visited:hover {
+  color: white;
+  background: linear-gradient(to left, red, #ffe6e6, black);
+}
+.flex a, .flex a:visited {
+  text-decoration: none;
+  color: white;
+}
+@media (min-width: 768px) {
+  .flex .main-nav {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.flex .main-nav li {
+  background: linear-gradient(to right, red, #ffe6e6, white);
+  color: black;
+  width: 150px;
+  font-weight: 800;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  list-style: none;
+}
+@media (min-width: 768px) {
+  .flex .main-nav li {
+    width: 150px;
+    align-self: auto;
+  }
+}
+.flex .main-nav li:hover {
+  color: white;
+  background: linear-gradient(to left, red, #ffe6e6, black);
+}
+
+/* intro styling */
+.intro {
+  background-image: url("../img/Skyline.jpg");
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.intro-text {
+  color: black;
+  border: solid 8px black;
+  border-radius: 10px;
+  padding: 15px;
+  background: conic-gradient(red, #ffe6e6, white, red);
+}
+
+.biopic {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  margin-bottom: 50px;
+}
+.biopic:hover {
+  transition: all 1s;
+  transform: scale3d(1.15, 1.15, 3) rotate(360deg);
+  border-radius: 0;
+}
+
+/* index styling */
+.row {
+  background-color: #ffe6e6;
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.contact, .tertiary, .secondary, .primary {
+  margin: 0px 20px;
+  border: 4px double #435c2b;
+  border-radius: 6px;
+  padding: 0 10px;
+  background: conic-gradient(red, #ffe6e6, white, red);
+  font-weight: 800;
+}
+@media (min-width: 768px) {
+  .contact, .tertiary, .secondary, .primary {
+    flex: 1 40%;
+  }
+}
+@media (min-width: 1200px) {
+  .contact, .tertiary, .secondary, .primary {
+    flex-basis: 0;
+  }
+}
+
+.primary {
+  margin-bottom: 20px;
+}
+@media (min-width: 1200px) {
+  .primary {
+    flex-grow: 1.5;
+    margin-bottom: 0;
+  }
+}
+
+.secondary {
+  margin-bottom: 20px;
+}
+@media (min-width: 1200px) {
+  .secondary {
+    margin-bottom: 0;
+    order: -1;
+  }
+}
+
+.comp {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.comp li {
+  font-size: 14px;
+  font-weight: 800;
+  text-align: center;
+  background-color: red;
+  color: white;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  list-style: none;
+  width: 75px;
+}
+.comp li:nth-child(even) {
+  background-color: black;
+}
+@media (min-width: 768px) {
+  .comp {
+    font-size: 16px;
+  }
+}
+
+/* About page styling */
+.content-rows {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffe6e6;
+}
+.content-rows div {
+  border: 4px double #435c2b;
+  border-radius: 6px;
+  background: conic-gradient(red, #ffe6e6, white, red);
+  color: black;
+  margin: 0 10px;
+}
+.content-rows div:nth-of-type(odd) {
+  margin: 10px;
+}
+.content-rows div:nth-of-type(even) img {
+  float: right;
+}
+.content-rows img {
+  height: 125px;
+  width: 150px;
+  border-radius: 25%;
+  float: left;
+  margin: 15px;
+}
+.content-rows h3 {
+  margin: 20px 10px;
+}
+
+/* General Projects Page */
+.project {
+  background-color: #ffe6e6;
+  padding: 20px;
+}
+.project-row {
+  text-align: center;
+  margin: 20px;
+  border: 4px double #435c2b;
+  border-radius: 6px;
+  background: conic-gradient(red, #ffe6e6, white, red);
+  color: black;
+}
+.project-row p {
+  font-size: 16px;
+}
+@media (min-width: 768px) {
+  .project-row p {
+    font-size: 18px;
+  }
+}
+.project-images {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .project-images {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.project-image {
+  height: 150px;
+  width: 150px;
+  margin: 25px;
+}
+.project-image:hover {
+  transform: scale(1.5);
+}
+@media (min-width: 768px) {
+  .project-image {
+    height: 180px;
+    width: 180px;
+  }
+}
+@media (min-width: 1200px) {
+  .project-image {
+    height: 300px;
+    width: 300px;
+  }
+}
+
+/* Contact page styles */
+.contact-wrap {
+  background-color: grey;
+  padding: 20px;
+}
+.contact-end {
+  padding-bottom: 10px;
+}
+
+/* Footer styling */
+.wrap-foot {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: black;
+}
+@media (min-width: 768px) {
+  .wrap-foot {
+    flex-direction: row;
+  }
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .footer {
+    padding-left: 20px;
+    padding-top: 8px;
+    line-height: 0.6;
+  }
+}
+.footer .footer-final, .footer .footer-initial {
+  padding-top: 10px;
+  color: white;
+  margin-bottom: -10px;
+}
+.footer-initial {
+  margin-top: -2px;
+}
+.footer-final {
+  padding: 10px 0;
+  margin-bottom: 0px;
+}
+
+.social-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .social-box {
+    justify-content: center;
+  }
+}
+
+.social-links, .social-last {
+  height: 30px;
+  width: 30px;
+  margin: 0 10px;
+}
+
+.social-last {
+  margin-right: 20px;
+}
+
+/* global styling */
+a, a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+/*# sourceMappingURL=sass_styles.css.map */
