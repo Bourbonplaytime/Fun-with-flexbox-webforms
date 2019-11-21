@@ -1,10 +1,10 @@
 /* Error: Undefined variable.
  *   ,
- * 2 | $theme-gradient: linear-gradient(to right, red, $theme-grey, white);
- *   |                                                 ^^^^^^^^^^^
+ * 4 |   background-color: $themgrey;
+ *   |                     ^^^^^^^^^
  *   '
- *   scss\partials\_variables.scss 2:49  @import
- *   scss\sass_styles.scss 2:9           root stylesheet */
+ *   scss\partials\_projects.scss 4:21  @import
+ *   scss\sass_styles.scss 8:1          root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -14,5 +14,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 2 \2502  $theme-gradient: linear-gradient(to right, red, $theme-grey, white);\d\a   \2502                                                  ^^^^^^^^^^^\a   \2575 \a   scss\\partials\\_variables.scss 2:49  @import\a   scss\\sass_styles.scss 2:9           root stylesheet";
+  content: "Error: Undefined variable.\a   \2577 \a 4 \2502    background-color: $themgrey;\d\a   \2502                      ^^^^^^^^^\a   \2575 \a   scss\\partials\\_projects.scss 4:21  @import\a   scss\\sass_styles.scss 8:1          root stylesheet";
 }
