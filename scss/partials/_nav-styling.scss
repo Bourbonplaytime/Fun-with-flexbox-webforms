@@ -26,25 +26,28 @@
         text-decoration: none;
         color: white;
     }
+
     .main-nav {
+        @include flex;
+        list-style-type: none;
+        margin-right: 30px;
         @media (min-width: $tab) {
             @include flex(row);
         }
         li {
-        background: $theme-gradient;
-        color: black;
-        width: 150px;
-        font-weight: 800;
-        text-decoration: none;
-        font-size: 20px;
-        padding: 5px;
-        margin: 5px;
-        border-radius: 5px;
-        list-style: none;
-        @media (min-width: $tab) {
+            background: $theme-gradient;
+            color: black;
             width: 150px;
-            align-self: auto;
-        }
+            font-weight: 800;
+            text-decoration: none;
+            font-size: 20px;
+            padding: 5px;
+            margin: 5px;
+            border-radius: 5px;
+            @media (min-width: $tab) {
+                width: 150px;
+                align-self: auto;
+            }
             &:hover {
                 color: white;
                 background: $theme-gradient-flip;     
