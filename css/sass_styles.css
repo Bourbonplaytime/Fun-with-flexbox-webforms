@@ -323,7 +323,7 @@
 .social-box {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  margin: 15px auto;
   list-style-type: none;
 }
 @media (min-width: 768px) {
@@ -339,7 +339,12 @@
 }
 
 .social-last {
-  margin-right: 20px;
+  margin-right: 50px;
+}
+@media (min-width: 768px) {
+  .social-last {
+    margin-right: 20px;
+  }
 }
 
 /* global styling */
