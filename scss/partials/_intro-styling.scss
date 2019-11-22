@@ -6,7 +6,7 @@
     @include flex;
     align-items: center;
     &-text {
-        color: black;
+        color: $starry-night;
         text-align: center;
         border: solid 8px black;
         border-radius: 10px;

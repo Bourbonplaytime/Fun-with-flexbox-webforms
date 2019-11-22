@@ -2,6 +2,8 @@
 
 .contact {
     @extend %column;
+    color: $starry-night;
+    font-family: $font-pri;
     &-wrap {
         background-color: $theme-grey;
         padding: 20px;
@@ -12,6 +14,6 @@
 }
 
 .mailto {
-    color: black;
+    color: $starry-night;
     text-decoration: underline;
 }

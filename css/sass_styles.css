@@ -3,7 +3,7 @@
     background: red;
   }
   100% {
-    background: white;
+    background: #b59c9c;
   }
 }
 @keyframes fadeOut {
@@ -20,7 +20,7 @@
   flex-direction: column;
   align-items: center;
   flex-grow: 1;
-  background-color: black;
+  background-color: #4D0000;
 }
 @media (min-width: 1200px) {
   .flex {
@@ -32,15 +32,16 @@
   }
 }
 .flex .name, .flex .name:visited {
-  color: black;
-  background: linear-gradient(to right, red, #4d4d4d, white);
+  color: #4D0000;
+  font-family: "Ubuntu", sans-serif;
+  background: linear-gradient(to right, red, #b59c9c, white);
   padding: 5px;
   margin: 5px;
   border-radius: 5px;
 }
 .flex .name:hover, .flex .name:visited:hover {
   color: white;
-  background: linear-gradient(to left, red, #4d4d4d, black);
+  background: linear-gradient(to left, red, #b59c9c, #4D0000);
 }
 .flex a, .flex a:visited {
   text-decoration: none;
@@ -64,8 +65,9 @@
   }
 }
 .flex .main-nav li {
-  background: linear-gradient(to right, red, #4d4d4d, white);
-  color: black;
+  background: linear-gradient(to right, red, #b59c9c, white);
+  color: #4D0000;
+  font-family: "Ubuntu", sans-serif;
   width: 150px;
   font-weight: 800;
   text-decoration: none;
@@ -82,7 +84,7 @@
 }
 .flex .main-nav li:hover {
   color: white;
-  background: linear-gradient(to left, red, #4d4d4d, black);
+  background: linear-gradient(to left, red, #b59c9c, #4D0000);
 }
 
 /* intro styling */
@@ -94,7 +96,7 @@
   align-items: center;
 }
 .intro-text {
-  color: black;
+  color: #4D0000;
   text-align: center;
   border: solid 8px black;
   border-radius: 10px;
@@ -117,7 +119,7 @@
 
 /* index styling */
 .row {
-  background-color: #4d4d4d;
+  background-color: #b59c9c;
   padding: 20px;
 }
 @media (min-width: 768px) {
@@ -135,6 +137,8 @@
   animation: fadeOut 5s;
   background: #FF6666;
   font-weight: 800;
+  font-family: "Roboto", sans-serif;
+  color: #4D0000;
 }
 @media (min-width: 768px) {
   .contact, .tertiary, .secondary, .primary {
@@ -185,7 +189,7 @@
   width: 75px;
 }
 .comp li:nth-child(even) {
-  background-color: black;
+  background-color: #4D0000;
 }
 @media (min-width: 768px) {
   .comp {
@@ -197,14 +201,15 @@
 .content-rows {
   display: flex;
   flex-direction: column;
-  background-color: #4d4d4d;
+  background-color: #b59c9c;
+  font-family: "Roboto", sans-serif;
 }
 .content-rows div {
   border: 4px double #435c2b;
   border-radius: 6px;
   animation: fadeOut 5s;
   background: #FF6666;
-  color: black;
+  color: #4D0000;
   margin: 0 10px;
 }
 .content-rows div:nth-of-type(odd) {
@@ -226,8 +231,9 @@
 
 /* General Projects Page */
 .project {
-  background-color: #4d4d4d;
+  background-color: #b59c9c;
   padding: 20px;
+  font-family: "Roboto", sans-serif;
 }
 .project-row {
   text-align: center;
@@ -236,7 +242,7 @@
   border-radius: 6px;
   animation: fadeOut 5s;
   background: #FF6666;
-  color: black;
+  color: #4D0000;
 }
 .project-row p {
   font-size: 16px;
@@ -280,8 +286,12 @@
 }
 
 /* Contact page styles */
+.contact {
+  color: #4D0000;
+  font-family: "Roboto", sans-serif;
+}
 .contact-wrap {
-  background-color: #4d4d4d;
+  background-color: #b59c9c;
   padding: 20px;
 }
 .contact-end {
@@ -289,7 +299,7 @@
 }
 
 .mailto {
-  color: black;
+  color: #4D0000;
   text-decoration: underline;
 }
 
@@ -298,7 +308,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: black;
+  background-color: #4D0000;
 }
 @media (min-width: 768px) {
   .wrap-foot {

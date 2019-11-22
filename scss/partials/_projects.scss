@@ -3,13 +3,14 @@
 .project {
   background-color: $theme-grey;
   padding: 20px;
+  font-family: $font-pri;
   &-row {
     text-align: center;
     margin: 20px;
     border: 4px double #435c2b;
     border-radius: 6px;
     @include fadeOut;
-    color: black;
+    color: $starry-night;
     p {
       font-size: 16px;
       @media (min-width: $tab) {

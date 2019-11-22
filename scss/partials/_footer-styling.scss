@@ -3,7 +3,7 @@
 .wrap-foot {
     @include flex;
     justify-content: space-between;
-    background-color: black;
+    background-color: $starry-night;
     @media (min-width: $tab) {
         flex-direction: row;
     }

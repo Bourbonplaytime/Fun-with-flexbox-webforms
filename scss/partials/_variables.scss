@@ -1,15 +1,24 @@
 // Variables 
 
-$theme-grey: #B59C9C;
+$font-pri: 'Roboto', sans-serif;
 
-$theme-background: #FF6666;
+$font-head: 'Ubuntu', sans-serif;
+
+$black: #4D0000;
+
+$starry-night: $black;
+
+$grey: #b59c9c;
+
+$light-red: #FF6666;
+
+$theme-grey: $grey;
+
+$theme-background: $light-red;
 
 $theme-gradient: linear-gradient(to right, red, $theme-grey, white);
 
-$theme-gradient-flip: linear-gradient(to left, red, $theme-grey, black);
-
-$theme-conic-gradient: conic-gradient(red, $theme-grey, white, 
-red);
+$theme-gradient-flip: linear-gradient(to left, red, $theme-grey, $starry-night);
 
 // Breakpoint variables
 
@@ -25,6 +34,9 @@ $desk: 1200px;
     }
 
     100% {
-        background: white;
+        background: $theme-grey;
     }
-}
+};
+
+// Font stack 
+

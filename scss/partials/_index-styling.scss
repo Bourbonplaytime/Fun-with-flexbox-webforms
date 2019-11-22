@@ -16,6 +16,8 @@
     padding: 0 10px;
     @include fadeOut;
     font-weight: 800;
+    font-family: $font-pri;
+    color: $starry-night;
     @media (min-width: $tab) {
         flex: 1 40%;
     }
@@ -62,7 +64,7 @@
         width: 75px;
     }
     li:nth-child(even) {
-        background-color: black;
+        background-color: $starry-night;
     }
     @media (min-width: $tab) {
         font-size: 16px;

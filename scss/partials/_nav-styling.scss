@@ -4,7 +4,7 @@
     @include flex;
     align-items: center;
     flex-grow: 1;
-    background-color: black;
+    background-color: $starry-night;
     @media (min-width: $desk) {
         @include flex ($dir: row);
         justify-content: space-between;
@@ -12,7 +12,8 @@
         padding: 0 50px;
     }
     .name, .name:visited {
-        color: black;
+        color: $starry-night;
+        font-family: $font-head;
         background: $theme-gradient;
         padding: 5px;
         margin: 5px;
@@ -39,7 +40,8 @@
         }
         li {
             background: $theme-gradient;
-            color: black;
+            color: $starry-night;
+            font-family: $font-head;
             width: 150px;
             font-weight: 800;
             text-decoration: none;
