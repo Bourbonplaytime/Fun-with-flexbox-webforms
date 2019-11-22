@@ -58,6 +58,11 @@
     flex-direction: row;
   }
 }
+@media (min-width: 1200px) {
+  .flex .main-nav {
+    margin-right: 0;
+  }
+}
 .flex .main-nav li {
   background: linear-gradient(to right, red, #4d4d4d, white);
   color: black;
