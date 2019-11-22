@@ -302,6 +302,9 @@
   color: #4D0000;
   text-decoration: underline;
 }
+.mailto:hover {
+  color: white;
+}
 
 /* Footer styling */
 .wrap-foot {

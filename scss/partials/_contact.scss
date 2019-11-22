@@ -16,4 +16,7 @@
 .mailto {
     color: $starry-night;
     text-decoration: underline;
+    &:hover {
+        color: white;
+    }
 }
