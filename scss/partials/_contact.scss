@@ -3,7 +3,7 @@
 .contact {
     @extend %column;
     &-wrap {
-        background-color: grey;
+        background-color: $theme-grey;
         padding: 20px;
     }
     &-end {
