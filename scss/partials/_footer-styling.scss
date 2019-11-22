@@ -36,6 +36,7 @@
 .social-box {
     @include flex(row);
     justify-content: center;
+    list-style-type: none;
     @media (min-width: $tab) {
         justify-content: center;
     }
