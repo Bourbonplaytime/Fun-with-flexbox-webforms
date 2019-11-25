@@ -101,6 +101,7 @@
   border: solid 8px black;
   border-radius: 10px;
   padding: 15px;
+  margin-bottom: -5px;
   animation: fadeOut 5s;
   background: #FF6666;
 }
@@ -109,7 +110,7 @@
   height: 250px;
   width: 250px;
   border-radius: 50%;
-  margin-bottom: 50px;
+  margin: 20px 0;
 }
 .biopic:hover {
   transition: all 1s;
